@@ -1,0 +1,13 @@
+@import '../components/style.scss';
+
+.content {
+  min-height: calc(100% - 40px);
+  padding-bottom: 40px;
+  background-color: $main-background-color;
+
+  overflow: hidden;
+}
+
+.content-center {
+  @include center-content-mixin;
+}

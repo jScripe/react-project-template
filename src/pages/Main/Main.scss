@@ -1,0 +1,10 @@
+@import '../../components/style.scss';
+
+.create-wrapper {
+    display: flex;
+    align-items: center;
+
+    & > * + * {
+        margin-left: 40px;
+    }
+}

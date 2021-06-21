@@ -1,0 +1,12 @@
+@mixin center-content-mixin {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+@mixin background-image-mixin($img) {
+  background-image: url('~images/#{$img}');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto auto;
+}

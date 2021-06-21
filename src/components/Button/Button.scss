@@ -1,0 +1,45 @@
+@import '../style.scss';
+
+.button {
+  background: transparent;
+  border: 1px solid $border-button;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary-background-color;
+    color: $header-text-color;
+  }
+
+  &:active {
+    border-color: $border-button;
+    background-color: transparent;
+    color: $main-text-color;
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $border-button;
+    outline: none;
+  }
+}
+
+.small {
+  padding: 0 7px;
+  height: 24px;
+  @include text-mixin;
+  font-size: 12px;
+}
+
+.large {
+  padding: 0 24px;
+  height: 40px;
+  @include text-mixin;
+}
+
+.normal {
+  padding: 0 15px;
+  height: 32px;
+  @include text-mixin;
+}

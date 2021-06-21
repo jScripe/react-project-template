@@ -1,0 +1,22 @@
+@import '../../../components/style.scss';
+
+.content {
+  background-color: #ffffff;
+  margin-bottom: 40px;  
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  background-color: $secondary-background-color;
+}
+
+.tabs-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  border-bottom: 1px solid $border-color;
+}

@@ -1,8 +1,10 @@
 
 import { combineReducers } from 'redux';
 
-import { app } from '@/App/reducers';
+import { app } from '@/App/reducer';
+import { main } from '@/pages/Main/reducer';
 
 export default combineReducers({
-  app
+  app,
+  main
 });

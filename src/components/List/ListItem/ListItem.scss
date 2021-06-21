@@ -1,0 +1,9 @@
+.list-item-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    & > *:last-child {
+        margin-left: auto;
+    }
+}

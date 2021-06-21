@@ -1,0 +1,19 @@
+@import '../style.scss';
+
+.content {
+  display: flex;
+  justify-content: center;
+  @include text-mixin;
+  font-size: 20px;
+}
+
+.tab {
+  color: $secondary-background-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+
+  & + & {
+    margin-left: 24px;
+  }
+}
