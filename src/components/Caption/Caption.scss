@@ -1,0 +1,8 @@
+@import '../style.scss';
+
+.caption {
+  @include text-mixin;
+  display: block;
+  color: $main-text-color;
+  text-transform: uppercase;
+}

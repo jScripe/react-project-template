@@ -8,6 +8,7 @@ import { configureStore } from '@/store/store';
 import { AppHeader } from './AppHedaer';
 import { Main } from '@/pages/Main';
 import { CompletedTasks } from '@/pages/CompletedTasks';
+import { Auth } from '@/pages/Auth/Auth';
 
 const store = configureStore();
 
@@ -15,6 +16,7 @@ export const App = () => {
   return (
     <Provider store={store}>
       <BrowserRouter>
+      <Auth>
           <div className={styles.content}>
             <AppHeader />
             <div className={styles.contentCenter}>
@@ -25,6 +27,7 @@ export const App = () => {
               </Switch>
             </div>
           </div>
+        </Auth>
       </BrowserRouter>
     </Provider>
   );
